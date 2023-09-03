@@ -1,0 +1,692 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Suisse Regular,sans-serif;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  background-color: #fffef2;
+}
+
+#greyBox{
+  background-color: #c2c2af;
+  
+}
+#blackBox{
+  background-color: #252525;
+  color: white;
+}
+#greyBox, #blackBox{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14.5px;
+  display: flex;
+  justify-content: center;
+} 
+#greyBoldIt{
+  font-weight: 600;
+  padding-left: 8px;
+}
+#plusSign{
+  padding-left: 8px;
+}
+
+#Navbar{
+  font-size: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  /* border: 1px solid red; */
+  font-weight: 550 ;
+}
+a{
+  color: #333333 !important;
+  text-decoration: none;
+}
+#Navleft{
+  width: 70%;
+}
+#Navright{
+  width: 13%;
+}
+#Navleft, #Navright{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+}
+#search{
+  width: 20px;
+  height: 20px;
+}
+#NavleftSmallScr, #NavrightSmallScr, #Navleft>:nth-child(8){
+  display: none;
+}
+
+#BrownThing{
+  background-image: url('https://www.aesop.com/u1nb1km7t5q7/AGQGWYrTapcQI1NrPvsYU/11e99769c1767531dd3c12b6fce85f37/Aesop_Bar_Soaps_2023_Web_Homepage_2_Primary_Full_Bleed_Desktop_2880x1044px.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: 100vh;
+}
+#BlackThing{
+  display: none;  
+  background-color: rgb(51,51,51);
+  padding: 50px 20px;
+  text-align: left;
+  color: white;
+  line-height: 1.5;
+  font-size: 16px;
+}
+#makeItLeft{
+  display: flex;
+  /* justify-content:flex-start; */
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 50%;
+  padding-top: 150px;
+  padding-left: 60px;
+  color: #fffef0;
+}
+#AesopName{
+  width: 22%;
+  /* border: 1px solid green; */
+  font-size:40px
+}
+#AesopDetails{
+  text-align: left;
+  width: 70%;
+  /* border: 1px solid green; */
+}
+#AesopDetails >:nth-child(1){
+  font-size:15px;
+  margin-bottom: 20px;
+}
+#BlackThingDetails >:nth-child(1) {
+  margin-bottom: 20px;
+}
+#AesopDetails >:nth-child(2), #BlackThingDetails >:nth-child(2) {
+  font-size:30px;
+  margin-bottom: 20px;
+}
+#BlackThingDetails >:nth-child(2) {
+  font-size:25px;
+}
+#AesopDetails >:nth-child(3){
+  line-height : 1.5
+}
+#AesopDetails >:nth-child(4),  #BlackThingDetails >:nth-child(4){
+  border: 1px solid #fffef0;
+  margin-top: 25px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+#BlackThingDetails >:nth-child(4){
+  width: 90%;
+  justify-content: left;
+  font-size: 16px;
+  padding: 20px;
+}
+#AesopDetails >:nth-child(4):hover{
+  background-color: #fffef0;
+  color: black;
+}
+
+
+.body, .skin, .home{
+  /* border: 1px solid red; */
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: #353534;
+  display: flex;
+}
+.body2, .skin2, .home2{
+  display: none;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  color: #353534;
+}
+
+.bodyText, .PooText, .StoreText, .homeText, .skinText{
+  /* border: 1px solid green; */
+  padding-left: 80px;
+  text-align: left;
+  width: 60%;
+  color: #3a3a3a;
+}
+.skinText, .homeText{
+  width: 60%;
+}
+.ArrowLeft, .ArrowRight, .ArrowStoreLeft, .ArrowStoreRight{
+  position:absolute;
+  margin-top:230px;
+  font-size:4rem; 
+  color:grey;
+   z-index:10; 
+  cursor:pointer; 
+}
+.ArrowLeft{  
+  left:400px;
+}
+.ArrowRight, .ArrowStoreRight{  
+  right: 10px;
+}
+.ArrowStoreLeft{  
+  left:600px;
+}
+
+.bodyArrowLeft2, .bodyArrowRight2, .skinArrowLeft2, .skinArrowRight2, .homeArrowLeft2, .homeArrowRight2{
+  position:absolute;
+  margin-top:100px;
+  font-size:3rem; 
+  color:grey;
+  z-index:10; 
+  cursor:pointer; 
+}
+.bodyArrowLeft2, .skinArrowLeft2, .homeArrowLeft2{  
+  left:10px;
+}
+.bodyArrowRight2, .skinArrowRight2, .homeArrowRight2{  
+  right: 10px;
+}
+
+
+
+.aboveHeading{
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 550;
+}
+.Heading, .HeadingPoo, .StoreHeading{
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+.Info, .InfoPoo, .StoreInfo{
+  font-size: 15px;
+  line-height : 1.5
+}
+.InfoPoo{
+  font-size: 17px;
+}
+.bodyRightDiv{
+  display: flex;
+  margin-top: 250px;
+  /* border: 1px solid green; */
+}
+.skinRightDiv, .homeRightDiv{
+  display: flex;
+}
+.card{
+  width: 50%;
+  /* border: 2px solid blue; */
+}
+.bodycard2, .skincard2, .homecard2{
+  width: 100%
+}
+.Skincard, .Homecard{
+  width: 60%;
+  /* border: 2px solid blue; */
+}
+.cardInnerDiv{
+  padding-left: 0px;
+  padding-right: 150px;
+  /* border: 2px solid blue; */
+}
+.bodycardInnerDiv2, .skincardInnerDiv2, .homecardInnerDiv2{
+  padding-left: 120px;
+  padding-right: 120px;
+  /* border: 2px solid blue; */
+}
+.card img{
+  width:100%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+.bodycard2 img, .skincard2 img, .homecard2 img{
+  width:100%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+.Skincard img, .Homecard img{
+  width:100%;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+.itemName, .itemDetails, .bodyitemName2, .bodyitemDetails2, .skinitemName2, .skinitemDetails2, .homeitemName2, .homeitemDetails2{
+  line-height: 2;
+  font-size: 14px;
+}
+.itemName, .bodyitemName2, .skinitemName2, .homeitemName2{
+  font-weight: 600;
+}
+.itemName:hover, .bodyitemName2:hover, .skinitemName2:hover, .homeitemName2:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.itemDetails:hover, .bodyitemDetails2:hover, .skinitemDetails2:hover, .homeitemDetails2:hover{
+  cursor: pointer;
+}
+.skincardInnerDiv, .homecardInnerDiv{
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.skincardInnerDiv>:nth-child(1), .homecardInnerDiv>:nth-child(1){
+  height: 80%;
+  /* border: 1px solid green; */
+}
+.skincardInnerDiv>:nth-child(2), .homecardInnerDiv>:nth-child(2){
+  height: 20%;
+  /* border: 2px solid pink */
+}
+
+
+.Athenaeum, .Poo, .Store{
+  display: flex;
+}
+.AthenaeumLeft, .PooRight, .StoreLeft{
+  width: 50%;
+  padding-right: 100px
+}
+.AthenaeumRight, .PooLeft, .StoreRight{
+  width:70%;
+  /* border: 2px solid red; */
+}
+.AthenaeumRight>img, .PooLeft>img, .StoreRight img{
+  width: 100%;
+  height: 100%;
+}
+.ReadMore, .ReadMorePoo, .StoreReadMoreDiv, .SeeAll, .bodySeeAll2{
+  border: 1px solid gray;
+  margin-top: 25px;
+  width: 70%;
+  display: flex;
+  justify-content:space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+.ReadMore:hover, .ReadMorePoo:hover, .StoreReadMoreDiv:hover{
+  color: #fffef0;
+  background-color: rgb(46, 46, 46);
+  cursor: pointer;
+}
+.SeeAll{
+  border: none;
+  justify-content:space-between;
+  display: flex;
+  width: 40%;
+  /* border: 1px solid red; */
+}
+.SeeAll:hover{
+  cursor: pointer;
+}
+
+
+
+.PooLeft{
+  width:60%;
+  /* border: 2px solid red; */
+}
+.PooRight{
+  width: 40%;
+  padding-right: 60px
+}
+
+
+#quoteDiv{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  color: #4b4b49;
+}
+#quoteDiv>:nth-child(1){
+  font-size: 30px;
+  font-family: serif;
+}
+#quoteDiv>:nth-child(2){
+  margin-top: 20px;
+}
+
+
+#Footer{
+  background-color: #252525;
+  color: white;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#FooterDiv1, #FooterDiv2, #FooterDiv2SmlScr{
+  line-height: 2;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  /* border: 1px solid red; */
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+#FooterDiv1>div, #FooterDiv2>div{
+  width: 18%;
+  /* border: 1px solid green; */
+}
+#FooterDiv1>:nth-child(1), #FooterDiv2>:nth-child(1){
+  width:35%
+}
+#FooterDiv3{
+  padding-left: 52px;
+  margin-top: 50px;
+}
+.EmailDiv{
+  border: 1px solid white;
+  margin-top: 25px;
+  display: flex;
+  justify-content:space-between;
+  padding: 2px 10px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.SubscribeDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.SubscribeDiv a{
+  color: white !important;
+  text-decoration: underline;
+}
+.SubscribeDiv p{
+  display: inline;
+}
+#FootmidAndSmlScr{
+  display: none;
+  padding: 10px 10px;
+  line-height: 1.5;
+}
+#FootmidAndSmlScr .SubscribeDiv{
+  width : 95%
+}
+#FootmidAndSmlScr .EmailDiv{
+  margin-bottom: 10px;
+}
+#FooterDiv2SmlScr{
+  display: none;
+}
+
+#FooterDiv2SmlScr>div{
+  width: 45%;
+}
+
+
+
+
+@media screen and (max-width: 1026px) and (min-width: 640px) {
+
+  #Navbar{
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #Navleft>:nth-child(1),
+  #Navleft>:nth-child(2),
+  #Navleft>:nth-child(3),
+  #Navleft>:nth-child(4),
+  #Navleft>:nth-child(5),
+  #Navleft>:nth-child(6),
+  #Navleft>:nth-child(7),
+  #Navleft>:nth-child(11) { display: none }
+
+  #Navleft>:nth-child(8){
+    display: inline;
+  }
+
+  #Navleft{
+    width: 30%;
+  }
+  #Navright{
+    width: 30%;
+  }
+  #BrownThing{
+    background-image: url('./images/brownImageMedScr.PNG'); 
+  }
+  #makeItLeft{
+    width: 70%;
+    padding-top: 100px;
+    padding-left: 15px;
+  }
+  #AesopName{
+    font-size:18px
+  }
+
+  
+
+  .body, .skin, .home{
+    display: block;
+    /* border: 1px solid green; */
+    margin-bottom: 120px;
+  }
+  .bodyText, .PooText, .StoreText, .skinText, .homeText{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-bottom: 200px;
+  }
+  .skinText, .homeText{
+    margin-bottom: 50px;
+  }
+  .bodyText>div, .PooText>div, .StoreText>div, .skinText>div, .homeText>div{
+    width: 50%;
+  }
+  
+  .bodyRightDiv{
+    margin-left: 150px;
+    margin-top: 0px;
+    /* border: 1px solid red; */
+  }
+  .skinRightDiv, .homeRightDiv{
+    /* margin-left: 80px; */
+    /* border: 1px solid green; */
+    padding-left: 100px;
+    padding-right: 100px;
+    /* border: 1px solid red; */
+  }
+  .ArrowLeft, .ArrowRight{
+    margin-top:60px;
+    font-size:3rem; 
+  }
+  .ArrowLeft{  
+    left:10px;
+  }
+  .ArrowRight{  
+    right: 10px;
+  }
+  .ArrowStoreLeft, .ArrowStoreRight{
+    margin-top:170px;
+  }
+  .ArrowStoreLeft{  
+    left:110px;
+    margin-top:250px
+  }
+  .ArrowStoreRight{  
+    right:10px;
+    margin-top:250px
+  }
+  .Athenaeum, .Poo, .Store{
+    display: block;
+    /* border: 1px solid red; */
+  }
+  .AthenaeumLeft, .PooRight, .StoreLeft{
+    width:70%;
+    display: block;
+    /* border: 1px solid green; */
+    margin-bottom: 10px;
+  }
+  .AthenaeumRight, .PooLeft, .StoreRight{
+    width:90%;
+    margin: auto;
+    margin-right: 0px;
+    /* border: 2px solid red; */
+  }
+  .PooLeft{
+    margin-left: 0px;
+  }
+  .aboveHeading, .Info{
+    font-size: 15px;
+    margin-bottom: 10px;
+  } 
+  .ReadMore, .ReadMorePoo, .StoreReadMoreDiv, .SeeAll{
+    width: 60%;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
+  .SeeAll{
+    padding-left: 0px;
+  }
+
+  #FootmidAndSmlScr{
+    display: block;
+  }
+  #FooterDiv1>:nth-child(1), #FooterDiv2>:nth-child(3){
+    display: none;
+  }
+  #FooterDiv1>div, #FooterDiv2>div{
+    width: 30%;
+  }
+  
+}
+
+@media screen and (max-width: 639px){
+
+  #Navbar, #makeItLeft, #AesopName, #AesopDetails{
+    display: none;
+  }
+  #NavleftSmallScr, #NavrightSmallScr{
+    display: block;
+    padding: 20px;
+    /* border: 1px solid green; */
+    font-size: 20px;
+    color: white;
+  }
+  #BrownThing{
+    display: flex;
+    justify-content: space-between;
+  }
+  #BrownThing>:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  #BrownThing{
+    background-image: url('./images/brownImage.PNG'); 
+  }
+  #BlackThing{
+    display: block;
+  }
+
+
+  .body, .skin, .home{
+    display: none;
+  }
+  .body2, .skin2, .home2{
+    display: block;    
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 100px;
+  }
+  .bodyText, .PooText, .StoreText, .homeText, .skinText{
+    padding-left: 20px;
+    width: 95%;    
+    /* border: 1px solid red; */
+    margin-bottom: 200px;
+  }
+  .skinText, .homeText{
+    margin-bottom: 100px;
+  }
+  .ArrowLeft, .ArrowRight{
+    margin-top:250px;
+    font-size:3rem; 
+    color:grey;
+     z-index:10; 
+    cursor:pointer; 
+  }
+  .ArrowLeft{  
+    left:10px;
+  }
+  .ArrowRight{  
+    right: 10px;
+  }
+
+  .AthenaeumLeft, .PooRight, .StoreLeft{
+    width:100%;
+    display: block;
+    /* border: 1px solid green; */
+    margin-bottom: 10px;
+    padding-left: 30px;
+  }
+  .AthenaeumRight, .PooLeft, .StoreRight{
+    width:90%;
+    margin: auto;
+    /* border: 2px solid red; */
+  }
+  
+  .Athenaeum, .Poo, .Store{
+    display: block;
+    /* border: 1px solid red; */
+  }
+  .InfoPoo{
+    font-size: 17px;
+  }
+  
+  .aboveHeading, .Info{
+    font-size: 18px;
+  }
+  .ReadMore, .ReadMorePoo, .StoreReadMoreDiv{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
+  .ArrowStoreLeft, .ArrowStoreRight{
+    margin-top:130px;
+  }
+  .ArrowStoreLeft{  
+    left:40px;
+  }
+  .ArrowStoreRight{  
+    right:40px;
+  }
+  #FootmidAndSmlScr{
+    display: block;
+  }
+  #FooterDiv1>:nth-child(1), #FooterDiv1>:nth-child(4),#FooterDiv2>:nth-child(3), #FooterDiv2>:nth-child(1){
+    display: none;
+    /* border: 1px solid blue; */
+  }
+  
+  #FooterDiv2SmlScr{
+    display: flex;
+  }
+  #FooterDiv1>div, #FooterDiv2>div{
+    width: 45%;
+  }
+}
+
+
+
+   
+ 
+
+
